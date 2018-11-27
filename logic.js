@@ -93,10 +93,10 @@ legend.onAdd = function (map) {
 
     var div = L.DomUtil.create('div', 'info legend'),
     grades = [3, 4, 5, 6, 7, 8]
-    labels = ["Minor (> 4)", "Light (4-4.9)", "Moderate (5-5.9)", "Strong (6-6.9)", "Major (7-7.9)", "Great (8 <)"];
+    labels = ["Minor", "Light", "Moderate", "Strong", "Major", "Great"];
 
     // Legend title
-    div.innerHTML+='<b>Class (Magnitude)<b><br><hr>'
+    div.innerHTML+='<b>Ritcher Magnitude Scale<b><br><hr>'
     
     // loop through legend labels and generate a colored square for each class/magnitude
     for (var i = 0; i < labels.length; i++) {
